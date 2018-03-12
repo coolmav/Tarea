@@ -26,9 +26,17 @@ public static void main(String[] args) {
         System.out.print("Digite tu apellido es: "); apellido=ny.next();
         System.out.print("Tus horas de trabajo son ");tiempoServicio=ny.nextDouble();
         System.out.print("Tu incentivo ganado es ");incen=ny.nextDouble();
-        System.out.print("El sueldo es: ");sueldo=ny.nextDouble();
-        System.out.print("El pago por hora es: ");pagoH=ny.nextDouble();
-        System.out.print("El pago por hora es: ");tiempo=ny.nextByte();
+        System.out.print("Tu pago por hora es: ");pagoH=ny.nextDouble();
+        System.out.print("El tiempo de trabajo es: ");tiempo=ny.nextByte();
+        
+        
+      
+    
+           
+       
+    
+    
+         
         
         System.out.println("\n");
         
@@ -40,8 +48,10 @@ public static void main(String[] args) {
         System.out.println("Tu nombre es: " +nombre);
         System.out.println("Tu apellido es: " +apellido);
         System.out.println("Tus horas de trabajo son " +tiempoServicio);
-        System.out.println("Tu incentivo ganado es " +incen);
+        System.out.println("Tu incentivo ganado es " +incen); 
+        sueldo=tiempoServicio*pagoH*incen;
         System.out.println("El sueldo es: " +sueldo);
+        pagoH=sueldo/tiempoServicio;
         System.out.println("El pago por hora es: " +pagoH);
         System.out.println("El tiempo de trabajo es: " +tiempo);
          
